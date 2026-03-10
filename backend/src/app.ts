@@ -4,7 +4,7 @@ import router from "./router.js";
 
 const app = new Hono();
 
-app.use("/*", serveStatic({ root: "../frontend/dist" }));
 app.route("/api", router);
+app.use("/*", serveStatic({ root: "../frontend/dist" }));
 
 export default app;
