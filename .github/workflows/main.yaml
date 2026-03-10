@@ -1,0 +1,44 @@
+name: main
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: node:24.5.0
+    steps:
+      - uses: actions/checkout@v4
+
+      # Backend
+      - name: Install backend dependencies
+        run: npm ci
+        working-directory: ./backend
+
+      - name: Lint backend
+        run: npm run lint
+        working-directory: ./backend
+
+      - name: Test backend
+        run: npm run test
+        working-directory: ./backend
+
+      - name: Build backend
+        run: npm run build
+        working-directory: ./backend
+
+      # Frontend
+      - name: Install frontend dependencies
+        run: npm ci
+        working-directory: ./frontend
+
+      - name: Lint frontend
+        run: npm run lint
+        working-directory: ./frontend
+
+      - name: Build frontend
+        run: npm run build
+        working-directory: ./frontend
