@@ -3,7 +3,8 @@ import Button from "../Button/Button";
 export default function Navbar() {
   return (
     <nav>
-      <Button variant="primary" type="button">
+      <button className="btn bnt-primary">Primary</button>
+      {/* <Button variant="primary" type="button">
         Primary
       </Button>
       <Button variant="secondary" type="button">
@@ -11,7 +12,7 @@ export default function Navbar() {
       </Button>
       <Button variant="accent" type="button">
         Accent
-      </Button>
+      </Button> */}
     </nav>
   );
 }
