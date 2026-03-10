@@ -26,13 +26,14 @@ testController.get("/cat/:id", async (c) => {
     const cat = testService.getById(id);
     if (!cat) {
       c.status(404);
-      c.json({ message: "cat does not exist" });
+      return c.json({ message: "cat does not exist" });
     }
     return c.json(cat);
   } catch (error) {
     console.error(error);
     c.status(500);
-    return c.json(error);
+    console.error(error);
+    return c.json({ message: "Internal server error." });
   }
 });
 
