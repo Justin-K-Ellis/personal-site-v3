@@ -1,0 +1,17 @@
+{
+  "name": "personal-site-v3",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend",
+    "shared"
+  ],
+  "homepage": "https://github.com/Justin-K-Ellis/personal-site-v3#readme",
+  "bugs": {
+    "url": "https://github.com/Justin-K-Ellis/personal-site-v3/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Justin-K-Ellis/personal-site-v3.git"
+  }
+}

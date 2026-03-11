@@ -43,4 +43,44 @@ describe("the test route", () => {
       expect(res.status).toBe(400);
     });
   });
+
+  describe("POST /api/test/cat", () => {
+    it("should return status 201 on success", async () => {
+      const data = { name: "Fluffy" };
+      const res = await app.request(url, {
+        method: "POST",
+        body: JSON.stringify(data),
+        headers: new Headers({ "Content-type": "application/json" }),
+      });
+      expect(res.status).toBe(201);
+    });
+
+    it("should return 400 if data is malformed", async () => {
+      const data = { catName: "Fluffy" };
+      const res = await app.request(url, {
+        method: "POST",
+        body: JSON.stringify(data),
+        headers: new Headers({ "Content-type": "application/json" }),
+      });
+      expect(res.status).toBe(400);
+    });
+
+    it("should return status 409 if cat already exists", async () => {
+      const data = { name: "Fluffy" };
+
+      const _res1 = await app.request(url, {
+        method: "POST",
+        body: JSON.stringify(data),
+        headers: new Headers({ "Content-type": "application/json" }),
+      });
+
+      const res2 = await app.request(url, {
+        method: "POST",
+        body: JSON.stringify(data),
+        headers: new Headers({ "Content-type": "application/json" }),
+      });
+
+      expect(res2.status).toBe(409);
+    });
+  });
 });
