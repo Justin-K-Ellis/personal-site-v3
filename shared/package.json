@@ -1,0 +1,11 @@
+{
+  "name": "@personal-site-v3/shared",
+  "type": "module",
+  "version": "0.0.0",
+  "exports": {
+    "./*": "./*.ts"
+  },
+  "peerDependencies": {
+    "zod": "^4.3.6"
+  }
+}
