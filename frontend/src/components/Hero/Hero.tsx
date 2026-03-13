@@ -2,7 +2,7 @@ import { Link } from "react-router";
 
 export default function Hero() {
   return (
-    <div className="hero bg-base-200 h-1/2 p-6">
+    <div className="hero bg-base-200 h-1/2 p-6 mb-6 w-screen ml-[calc(50%-50vw)]">
       <div className="hero-content text-center">
         <div className="max-w-md">
           <h1 className="text-5xl font-bold">Justin Klitgaard</h1>
