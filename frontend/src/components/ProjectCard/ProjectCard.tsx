@@ -18,7 +18,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           )}
           <div className="flex gap-1 flex-wrap">
             {project.stack.map((tech) => (
-              <Badge text={tech} />
+              <Badge text={tech} key={tech} />
             ))}
           </div>
         </div>

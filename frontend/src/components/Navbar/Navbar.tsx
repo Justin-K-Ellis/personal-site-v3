@@ -36,7 +36,7 @@ export default function Navbar() {
               <summary>More</summary>
               <ul className="bg-base-100 rounded-t-none p-2">
                 {links.map((link) => (
-                  <li>
+                  <li key={link.url}>
                     <Link to={link.url}>{link.text}</Link>
                   </li>
                 ))}
