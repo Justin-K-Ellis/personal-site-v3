@@ -14,12 +14,20 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         <p className="font-light">{role}</p>
         <p>{project.description}</p>
         <div className="justify-end card-actions">
-          <a href={project.repoLink} target="_blank">
-            <button className="btn btn-primary">Repo</button>
+          <a
+            href={project.repoLink}
+            target="_blank"
+            className="btn btn-primary"
+          >
+            Repo
           </a>
           {project.deploymentLink && (
-            <a href={project.deploymentLink} target="_blank">
-              <button className="btn btn-primary">Deployment</button>
+            <a
+              href={project.deploymentLink}
+              target="_blank"
+              className="btn btn-primary"
+            >
+              Deployment
             </a>
           )}
         </div>
