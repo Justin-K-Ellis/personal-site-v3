@@ -1,12 +1,11 @@
 import type { ProjectCardInterface } from "../../types/interfaces";
-import arrayToString from "../../../../backend/src/lib/arrayToString";
 
 interface ProjectCardProps {
   project: ProjectCardInterface;
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {
-  const role = arrayToString(project.role);
+  const role = project.role.join(", ");
 
   return (
     <div className="card bg-base-200 card-md shadow-sm md:w-1/4 border border-base-300">
