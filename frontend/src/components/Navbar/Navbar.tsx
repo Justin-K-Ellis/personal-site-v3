@@ -27,7 +27,7 @@ export default function Navbar() {
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <button className="btn">
+            <button className="btn bg-primary">
               <Link to={"/contact"}>Contact</Link>
             </button>
           </li>
@@ -36,7 +36,7 @@ export default function Navbar() {
               <summary>More</summary>
               <ul className="bg-base-100 rounded-t-none p-2">
                 {links.map((link) => (
-                  <li>
+                  <li key={link.url}>
                     <Link to={link.url}>{link.text}</Link>
                   </li>
                 ))}

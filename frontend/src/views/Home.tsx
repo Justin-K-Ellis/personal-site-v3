@@ -1,5 +1,22 @@
 import Hero from "../components/Hero/Hero";
+import ProjectCard from "../components/ProjectCard/ProjectCard";
+import Title from "../components/Title/Title";
+import { projects } from "../assets/projectData";
 
 export default function Home() {
-  return <Hero />;
+  return (
+    <>
+      <Hero />
+      {/* Projects */}
+      <Title text="Projects" />
+      <div
+        id="project-container"
+        className="flex justify-center mx-auto mt-6 gap-6 flex-col md:flex-row md:flex-wrap"
+      >
+        {projects.map((project) => (
+          <ProjectCard project={project} key={project.repoLink} />
+        ))}
+      </div>
+    </>
+  );
 }
