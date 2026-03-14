@@ -17,6 +17,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           <a
             href={project.repoLink}
             target="_blank"
+            rel="noopener noreferrer"
             className="btn btn-primary"
           >
             Repo
