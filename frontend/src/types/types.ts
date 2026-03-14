@@ -1,5 +1,5 @@
 export type ProjectRole =
-  | "Frontend Enginner"
+  | "Frontend Engineer"
   | "Backend Engineer"
   | "Fullstack Engineer"
   | "Project Lead";
@@ -18,7 +18,7 @@ export type TechBadge =
   | "React Router"
   | "React"
   | "shadcn/ui"
-  | "Spoontacular API"
+  | "Spoonacular API"
   | "Tailwind"
   | "TypeScript"
   | "Vue";
