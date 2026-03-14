@@ -7,7 +7,7 @@ export default function App() {
       <header>
         <Navbar />
       </header>
-      <main className="w-11/12 md:w-1/2 mx-auto">
+      <main className="w-11/12 md:w-7/10 mx-auto">
         <Outlet />
       </main>
     </div>
