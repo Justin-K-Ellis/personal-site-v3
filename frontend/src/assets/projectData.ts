@@ -31,7 +31,7 @@ export const projects: ProjectCardInterface[] = [
       "Express",
       "PostgreSQL",
       "Firebase auth",
-      "Spoontacular API",
+      "Spoonacular API",
     ],
   },
   {
@@ -67,7 +67,6 @@ export const projects: ProjectCardInterface[] = [
     description:
       "A fullstack learning management system that allows users to create, read, update, and delete information about courses, instructors, and students.",
     repoLink: "https://github.com/Justin-K-Ellis/course-management",
-    deploymentLink: "",
     stack: [
       "JavaScript",
       "React",
@@ -79,7 +78,7 @@ export const projects: ProjectCardInterface[] = [
   },
   {
     name: "Nagano Quest",
-    role: ["Frontend Enginner"],
+    role: ["Frontend Engineer"],
     description:
       "A fun little choose your own adventure game that takes users through Nagano Prefecture, Japan.",
     repoLink: "https://github.com/Justin-K-Ellis/NaganoQuest.js",
