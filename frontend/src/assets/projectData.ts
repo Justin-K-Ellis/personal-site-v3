@@ -1,7 +1,8 @@
-import type { ProjectCardInterface } from "../types/interfaces";
+import type { Project } from "../types/interfaces";
 
-export const projects: ProjectCardInterface[] = [
+export const projects: Project[] = [
   {
+    id: 1,
     name: "Japan Events",
     role: ["Project Lead", "Fullstack Engineer"],
     description:
@@ -19,6 +20,7 @@ export const projects: ProjectCardInterface[] = [
     ],
   },
   {
+    id: 2,
     name: "Recipe Wrangler",
     role: ["Fullstack Engineer"],
     description:
@@ -35,6 +37,7 @@ export const projects: ProjectCardInterface[] = [
     ],
   },
   {
+    id: 3,
     name: "Washoku Walker",
     role: ["Fullstack Engineer"],
     description:
@@ -53,6 +56,7 @@ export const projects: ProjectCardInterface[] = [
     ],
   },
   {
+    id: 4,
     name: "Personal Site (this site)",
     role: ["Fullstack Engineer"],
     description:
@@ -62,6 +66,7 @@ export const projects: ProjectCardInterface[] = [
     stack: ["TypeScript", "Next", "next-intl", "Tailwind", "shadcn/ui"],
   },
   {
+    id: 5,
     name: "Course Managment",
     role: ["Fullstack Engineer"],
     description:
@@ -77,6 +82,7 @@ export const projects: ProjectCardInterface[] = [
     ],
   },
   {
+    id: 6,
     name: "Nagano Quest",
     role: ["Frontend Engineer"],
     description:
