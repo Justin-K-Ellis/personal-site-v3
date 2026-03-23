@@ -14,7 +14,7 @@ export default function Home() {
         className="flex justify-center mx-auto mt-6 gap-6 flex-col md:flex-row md:flex-wrap"
       >
         {projects.map((project) => (
-          <ProjectCard project={project} key={project.repoLink} />
+          <ProjectCard project={project} key={project.id} />
         ))}
       </div>
     </>

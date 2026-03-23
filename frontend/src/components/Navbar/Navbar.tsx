@@ -1,8 +1,8 @@
 import { Link } from "react-router";
-import type { LinkInterface } from "../../types/interfaces";
+import type { NavBarLink } from "../../types/interfaces";
 
 export default function Navbar() {
-  const links: LinkInterface[] = [
+  const links: NavBarLink[] = [
     {
       text: "Home",
       url: "/",

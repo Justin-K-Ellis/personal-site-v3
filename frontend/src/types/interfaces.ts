@@ -1,11 +1,12 @@
 import type { ProjectRole, TechBadge } from "./types";
 
-export interface LinkInterface {
+export interface NavBarLink {
   text: string;
   url: string;
 }
 
-export interface ProjectCardInterface {
+export interface Project {
+  id: number;
   name: string;
   role: ProjectRole[];
   description: string;

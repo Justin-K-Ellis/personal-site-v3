@@ -1,12 +1,11 @@
-import type { ProjectCardInterface } from "../../types/interfaces";
-import arrayToString from "../../../../backend/src/lib/arrayToString";
+import type { Project } from "../../types/interfaces";
 
 interface ProjectCardProps {
-  project: ProjectCardInterface;
+  project: Project;
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {
-  const role = arrayToString(project.role);
+  const role = project.role.join(", ");
 
   return (
     <div className="card bg-base-200 card-md shadow-sm md:w-1/4 border border-base-300">
@@ -15,12 +14,21 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         <p className="font-light">{role}</p>
         <p>{project.description}</p>
         <div className="justify-end card-actions">
-          <a href={project.repoLink} target="_blank">
-            <button className="btn btn-primary">Repo</button>
+          <a
+            href={project.repoLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-primary"
+          >
+            Repo
           </a>
           {project.deploymentLink && (
-            <a href={project.deploymentLink} target="_blank">
-              <button className="btn btn-primary">Deployment</button>
+            <a
+              href={project.deploymentLink}
+              target="_blank"
+              className="btn btn-primary"
+            >
+              Deployment
             </a>
           )}
         </div>
