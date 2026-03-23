@@ -20,6 +20,24 @@ export const projects: Project[] = [
     ],
   },
   {
+    id: 5,
+    name: "Eiki",
+    role: ["Fullstack Engineer"],
+    description:
+      "An educational app for reading and remembering English. Authenticated users can read short passage and answer comprehension questions, have their answers automatically scored, and review their stats.",
+    repoLink: "https://github.com/Justin-K-Ellis/eiki",
+    deploymentLink: "https://eiki.vercel.app/en",
+    stack: [
+      "TypeScript",
+      "React",
+      "Tailwind",
+      "Next",
+      "next-intl",
+      "PostgreSQL",
+      "Drizzle ORM",
+    ],
+  },
+  {
     id: 2,
     name: "Recipe Wrangler",
     role: ["Fullstack Engineer"],
@@ -61,26 +79,19 @@ export const projects: Project[] = [
     role: ["Fullstack Engineer"],
     description:
       "My personal site for sharing my projects, tech stack and info about me.",
-    repoLink: "#",
-    deploymentLink: "#",
-    stack: ["TypeScript", "Next", "next-intl", "Tailwind", "shadcn/ui"],
-  },
-  {
-    id: 5,
-    name: "Course Managment",
-    role: ["Fullstack Engineer"],
-    description:
-      "A fullstack learning management system that allows users to create, read, update, and delete information about courses, instructors, and students.",
-    repoLink: "https://github.com/Justin-K-Ellis/course-management",
+    repoLink: "https://github.com/Justin-K-Ellis/personal-site-v3",
+    deploymentLink: "http://www.justin-klitgaard.net",
     stack: [
-      "JavaScript",
+      "TypeScript",
+      "Vite",
       "React",
       "React Router",
-      "Express",
-      "PostgreSQL",
       "Tailwind",
+      "shadcn/ui",
+      "Hono",
     ],
   },
+
   {
     id: 6,
     name: "Nagano Quest",

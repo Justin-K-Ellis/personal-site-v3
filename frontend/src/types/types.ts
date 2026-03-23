@@ -6,8 +6,10 @@ export type ProjectRole =
 
 export type TechBadge =
   | "daisyUI"
+  | "Drizzle ORM"
   | "Express"
   | "Firebase auth"
+  | "Hono"
   | "Google Maps API"
   | "Google Places API"
   | "JavaScript"
@@ -21,4 +23,5 @@ export type TechBadge =
   | "Spoonacular API"
   | "Tailwind"
   | "TypeScript"
+  | "Vite"
   | "Vue";

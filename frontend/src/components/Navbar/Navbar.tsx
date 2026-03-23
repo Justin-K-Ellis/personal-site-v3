@@ -27,7 +27,7 @@ export default function Navbar() {
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <button className="btn bg-primary">
+            <button className="btn bg-info">
               <Link to={"/contact"}>Contact</Link>
             </button>
           </li>

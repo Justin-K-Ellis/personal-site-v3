@@ -8,7 +8,7 @@ interface TechCardProps {
 
 export default function TechCard({ name, Icon, color }: TechCardProps) {
   return (
-    <article className="shadow rounded-sm flex gap-2 justify-center items-center p-4 md:w-1/3 bg-stone-50">
+    <article className="shadow rounded-sm flex gap-2 justify-center items-center p-4 md:w-1/3 bg-base-200">
       <div className={`${color} text-2xl`}>
         <Icon />
       </div>
