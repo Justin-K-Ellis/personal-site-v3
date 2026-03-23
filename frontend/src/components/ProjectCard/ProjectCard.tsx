@@ -1,7 +1,7 @@
-import type { ProjectCardInterface } from "../../types/interfaces";
+import type { Project } from "../../types/interfaces";
 
 interface ProjectCardProps {
-  project: ProjectCardInterface;
+  project: Project;
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {
