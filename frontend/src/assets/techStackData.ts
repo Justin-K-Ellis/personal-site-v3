@@ -3,6 +3,7 @@ import {
   SiExpress,
   SiGit,
   SiGithub,
+  SiHono,
   SiJavascript,
   SiNextdotjs,
   SiNodedotjs,
@@ -77,9 +78,9 @@ export const backend: Tech[] = [
     color: "text-black",
   },
   {
-    name: "Next.js",
-    icon: SiNextdotjs,
-    color: "text-black",
+    name: "Hono",
+    icon: SiHono,
+    color: "text-orange-400",
   },
   {
     name: "PostgreSQL",
