@@ -9,7 +9,7 @@ export default function ContactCard(props: ContactCardProps) {
     <div className="flex flex-col items-center justify-center  gap-2">
       <a
         href={props.contact.url}
-        className="flex flex-col items-center"
+        className="flex flex-col items-center hover:opacity-80"
         target="_blank"
         rel="noopener noreferrer"
       >
