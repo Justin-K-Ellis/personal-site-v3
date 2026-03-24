@@ -1,5 +1,5 @@
 function getPort(): number {
-  let PORT = process.env.PORT;
+  const PORT = process.env.PORT;
   if (!PORT) {
     throw new Error("Port not found.");
   }

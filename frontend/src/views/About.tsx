@@ -7,8 +7,8 @@ export default function About() {
       <div className="my-4 md:my-8">
         <Title text="About Me" />
       </div>
-      {aboutMe.map((info, index) => (
-        <p key={index} className="text-justify">
+      {aboutMe.map((info) => (
+        <p key={info} className="text-justify">
           {info}
         </p>
       ))}

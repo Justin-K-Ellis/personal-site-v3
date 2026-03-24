@@ -3,8 +3,18 @@ import contactData from "../assets/contactData";
 import ContactCard from "../components/ContactCard/ContactCard";
 
 export default function Contact() {
-  const linkedin = contactData[0];
-  const github = contactData[1];
+  const linkedin = contactData.find((data) => data.name === "LinkedIn");
+  const github = contactData.find((data) => data.name === "GitHub");
+
+  if (!linkedin || !github) {
+    return (
+      <section className="flex justify-center items-center">
+        <p className="text-3xl">
+          Uh-oh, something went wrong with the contacts.
+        </p>
+      </section>
+    );
+  }
 
   return (
     <section

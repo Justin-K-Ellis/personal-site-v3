@@ -2,7 +2,7 @@ import Hero from "../components/Hero/Hero";
 import ProjectCard from "../components/ProjectCard/ProjectCard";
 import Title from "../components/Title/Title";
 import { projects } from "../assets/projectData";
-import { languages, frontend, backend } from "../assets/techStackData";
+import { languages, frontend, backend, tools } from "../assets/techStackData";
 import TechContainer from "../components/TechContainer/TechContainer";
 
 export default function Home() {
@@ -32,6 +32,8 @@ export default function Home() {
       />
       {/* Backend */}
       <TechContainer htmlId="backend-tech" subtitle="Backend" tech={backend} />
+      {/* Tools */}
+      <TechContainer htmlId="tools" subtitle="Tooling, etc." tech={tools} />
     </>
   );
 }
