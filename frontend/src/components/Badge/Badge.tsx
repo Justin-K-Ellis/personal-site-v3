@@ -1,3 +1,5 @@
+// This component is not currently in use. TODO: determine how to use this or delete.
+
 interface BadgeProps {
   text: string;
 }
