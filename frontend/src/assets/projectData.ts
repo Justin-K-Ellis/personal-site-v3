@@ -6,7 +6,7 @@ export const projects: Project[] = [
     name: "Japan Events",
     role: ["Project Lead", "Fullstack Engineer"],
     description:
-      "An app that indexes events from around Japan and let's users find them with a rich search interface, save interesting events, and anonymously share them.",
+      "An app that indexes events from around Japan and lets users find them with a rich search interface, save interesting events, and anonymously share them.",
     repoLink: "https://github.com/Event-Curator/event-curator",
     deploymentLink: "https://eventsjp.com/",
     stack: [
@@ -20,7 +20,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 5,
+    id: 2,
     name: "Eiki",
     role: ["Fullstack Engineer"],
     description:
@@ -38,7 +38,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     name: "Recipe Wrangler",
     role: ["Fullstack Engineer"],
     description:
@@ -55,7 +55,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     name: "Washoku Walker",
     role: ["Fullstack Engineer"],
     description:
@@ -74,7 +74,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     name: "Personal Site (this site)",
     role: ["Fullstack Engineer"],
     description:
@@ -87,7 +87,7 @@ export const projects: Project[] = [
       "React",
       "React Router",
       "Tailwind",
-      "shadcn/ui",
+      "daisyUI",
       "Hono",
     ],
   },
