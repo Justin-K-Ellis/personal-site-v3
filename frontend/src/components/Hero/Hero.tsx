@@ -12,9 +12,9 @@ export default function Hero() {
             contact info below. You can learn a little more about me in the
             About Me page.
           </p>
-          <button className="btn btn-info">
-            <Link to={"/contact"}>Contact Me</Link>
-          </button>
+          <Link to={"/contact"} className="btn btn-info">
+            Contact Me
+          </Link>
         </div>
       </div>
     </div>

@@ -8,7 +8,13 @@ export default function Footer() {
       </aside>
       <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
         {contacts.map((info) => (
-          <a href={info.url} key={info.url} className="text-3xl">
+          <a
+            href={info.url}
+            key={info.url}
+            className="text-3xl"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {<info.Icon />}
           </a>
         ))}

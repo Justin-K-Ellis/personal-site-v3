@@ -26,6 +26,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             <a
               href={project.deploymentLink}
               target="_blank"
+              rel="noopener noreferrer"
               className="btn btn-primary text-white"
             >
               Deployment
