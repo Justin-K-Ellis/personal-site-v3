@@ -9,10 +9,6 @@ const links: NavBarLink[] = [
     text: "About",
     url: "/about",
   },
-  {
-    text: "Blog",
-    url: "/blog",
-  },
 ];
 
 export default links;
